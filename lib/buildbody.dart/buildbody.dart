@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:udemyhomew2/box/box.dart';
-import 'package:udemyhomew2/box/box2.dart';
-import 'package:udemyhomew2/box/box3.dart';
-import 'package:udemyhomew2/box/box4.dart';
-import 'package:udemyhomew2/box/box5.dart';
-import 'package:udemyhomew2/box/box6.dart';
-import 'package:udemyhomew2/box/box7.dart';
 import 'package:udemyhomew2/texts/forecasttext.dart';
 import 'package:udemyhomew2/texts/listok.dart';
 import 'package:udemyhomew2/texts/mainfaz.dart';
@@ -29,13 +23,13 @@ class BuildBody extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
-            MyBox(),
-            MyBox2(),
-            MyBox3(),
-            MyBox4(),
-            MyBox5(),
-            MyBox6(),
-            MyBox7(),
+            MyBox(title: 'Saturday', temperature: '12° F'),
+            MyBox(title: 'Sunday', temperature: '5° F' ),
+            MyBox(title: 'Monday', temperature: '16° F' ),
+            MyBox(title: 'Tuesday', temperature: '13° F' ),
+            MyBox(title: 'Wednesday', temperature: '16° F' ),
+            MyBox(title: 'Thursday', temperature: '20° F' ),
+            MyBox(title: 'Friday', temperature: '-12° F' ),
           ],
         ),
       )
@@ -43,3 +37,5 @@ class BuildBody extends StatelessWidget {
   ));
 }
   }
+  
+  
